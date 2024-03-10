@@ -1,0 +1,18 @@
+ //Write a C program to display the sum of n terms of even natural numbers.
+ #include<stdio.h>
+ int main(){
+     int n,sum;
+     sum=0;
+     printf("Enter limit:");
+     scanf("%d",&n);
+     printf("Even numbers are=");
+     for(int i=1;i<=n;i++){
+         if(i%2==0){
+             printf("%d ",i);
+         }
+        sum=sum+i; 
+        }
+     printf("\n");
+     printf("summ will be %d",sum);
+     return(0);
+ }
