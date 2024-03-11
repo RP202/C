@@ -1,0 +1,11 @@
+//add 2 with all elemts and show solutions
+#include<stdio.h>
+int main(){
+    int i,arr[6],sum;
+    for(int i=0;i<=5;i++){
+        printf("enetr %d elemnts: ",(i+1));
+        scanf("%d",&arr[i]);
+        sum=arr[i]+2;
+        printf("%d +2=%d\n",arr[i],sum);
+    }return(0);
+}
