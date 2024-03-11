@@ -1,0 +1,25 @@
+//CONDITIONAL
+#include<stdio.h>
+int main(){
+    int x;
+    printf("Enter a number to check even odd:");
+    scanf("%d",&x);
+(x%2==0)?printf("Given number is even"):printf("given number is odd");
+return(0);
+}
+
+//if-else
+#include<stdio.h>
+int main(){
+    int x,s;
+    printf("Enter number odd and even:");
+    scanf("%d",&x);
+    s=x;
+    if(x%2==0){
+        printf("%d is a even number",s);
+    }
+    else{
+        printf("%d is a odd number",s);
+    }
+    return(0);
+}
