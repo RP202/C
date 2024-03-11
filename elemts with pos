@@ -1,0 +1,11 @@
+//display 4t and 5th elemnt
+#include<stdio.h>
+int main(){
+    int arr[5],i;
+    printf("Enter 5 elemnts:");
+    for(i=0;i<=4;i++){
+        scanf("%d",&arr[i]);
+         }
+         printf("4th and 5th elemt are:%d %d",arr[3],arr[4]);
+         return(0);
+}
