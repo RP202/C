@@ -1,0 +1,27 @@
+//Menu
+#include<stdio.h>
+int main(){
+    float a,b,sum,sub,mul,div;
+    int r;
+    printf("MENU");
+    printf("1 Adittion\n");
+    printf("2 Substraction\n");
+    printf("3 Multiplication\n");
+    printf("4 Divison\n");
+    printf("Enter option to process operation:");
+    scanf("%d",&r);
+    printf("Enter 2 numbers :");
+    scanf("%f %f",&a,&b);
+    sum=a+b;
+    sub=a-b;
+    mul=a*b;
+    div-a/b;
+    switch(r){
+        case 1:printf("Addition of %f and %f will be =%f",a,b,sum);break;
+        case 2:printf("Substraction of %f and %f will be =%f",a,b,sub);break;
+        case 3:printf("Multiplication of %f and %f will be =%f",a,b,mul);break;
+        case 4:printf("Divison of %f and %f will be =%f",a,b,div);break;
+        default:printf("invalid");
+    }
+    return(0);
+}
