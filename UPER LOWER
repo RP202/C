@@ -1,0 +1,35 @@
+//switch case
+#include<stdio.h>
+int main()
+{
+    char x,s;
+    printf("Enter alphabet:");
+    scanf("%c",&x);
+    switch(x>=65&&x<=90){
+        case  1:printf("%c is upper case",x);
+    }
+    switch(x>=97&&x<=122){
+        case 1:printf("%c is lower case",x);
+    }
+    return(0);
+}
+
+//if else
+#include<stdio.h>
+int main()
+{
+    char x,s;
+    printf("Enter alphabet:");
+    scanf("%c",&x);
+    s=x;
+    if(x>=65&&x<=90){
+        printf("%c is Upper case",s);
+    }
+    else if(x>=97&&x<=122){
+        printf("%c is lower case",s);
+    }
+  else{
+      printf("no alphabet is not aplhabet");
+  }
+}
+
