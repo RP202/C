@@ -1,0 +1,53 @@
+ //2-d array
+ #include<stdio.h>
+ int main(){
+     int arr[3][3],i,j;
+     printf("Enter elements for array :");
+     for(i=0;i<3;i++){//let i be row counter
+     for(j=0;j<3;j++){//j be column
+         scanf("%d",&arr[i][j]);
+     }
+ }
+ for(i=0;i<3;i++){
+     for(j=0;j<3;j++){
+         printf("%d ",arr[i][j]);
+     }printf("\n");
+ }
+     return(0);
+ }
+
+  //2-d array additio  
+ #include<stdio.h>
+ int main(){
+     int arr[3][3],jrr[3][3],srr[3][3],i,j;
+     printf("Enter elements for 1st array :");
+     for(i=0;i<3;i++){//let i be row counter
+     for(j=0;j<3;j++){//j be column
+         scanf("%d",&arr[i][j]);
+     }
+ }
+ for(i=0;i<3;i++){
+     for(j=0;j<3;j++){
+         printf("%d ",arr[i][j]);
+     }printf("\n");
+ }
+ printf("Enter elements for 2nd array :");
+     for(i=0;i<3;i++){//let i be row counter
+     for(j=0;j<3;j++){//j be column
+         scanf("%d",&jrr[i][j]);
+     }
+ }
+ for(i=0;i<3;i++){
+     for(j=0;j<3;j++){
+         printf("%d ",jrr[i][j]);
+     }printf("\n");
+ }
+ printf("sum array will be will be:\n");
+ for(i=0;i<3;i++){
+     for(j=0;j<3;j++){
+         srr[i][j]=arr[i][j]+jrr[i][j];
+         printf("%d ",srr[i][j]);
+     }printf("\n");
+ }
+     return(0);
+ }
