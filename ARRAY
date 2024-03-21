@@ -1,0 +1,20 @@
+//SUM OF ALL LEMENTS 
+#include<stdio.h>
+int main(){
+    int arr[20],n,i,sum;
+    sum=0;
+    printf("Enter Limit for array:");
+    scanf("%d",&n);
+    printf("enter lements of array:");
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("Elments of array are:\n");
+      for(i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }printf("\n");
+      for(i=0;i<n;i++){
+       sum=sum+arr[i];
+    }
+    printf("%d is sum of all elemnts of array",sum);
+}
