@@ -115,3 +115,26 @@ int main(){
         }}
             printf("%d",sum);
     }
+//Tranpose 
+#include<stdio.h>
+int main(){
+    
+     int arr[2][2],i,j;
+     printf("Enter elements for array :");
+     for(i=0;i<2;i++){//let i be row counter
+     for(j=0;j<2;j++){//j be column
+         scanf("%d",&arr[i][j]);
+     }
+ }
+ for(i=0;i<2;i++){
+     for(j=0;j<2;j++){
+         printf("%d ",arr[i][j]);
+     }printf("\n");
+ }printf("\n");
+ printf("Tranpose array:\n");
+ for(j=0;j<2;j++){
+     for(i=0;i<2;i++){
+         printf("%d ",arr[i][j]);
+     }printf("\n");
+ }
+}
