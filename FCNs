@@ -1,0 +1,60 @@
+AREA OF CIRCLE WITH 4 DIFFERENT FUCNS
+1)
+#include<stdio.h>
+#GIVING INPUT ANF OUTPUT
+float circle(float a){
+    float area;
+    area= a*3.14*2;
+    return(area);
+}
+int main(){
+    float radius,area;
+    printf("Enter radius to find circle=");
+    scanf("%f",&radius);
+    area=circle(radius);
+    printf("area of circle is %f",area);
+}
+2)
+#include<stdio.h>
+#NO OUTPUT ONLY INPUT
+void circle(float radius){
+    float area;
+    area=radius*2*3.14;
+    printf("%f is area of circle",area);
+}
+int main(){
+    float a;
+    printf("Enter radius :");
+    scanf("%f",&a);
+    circle(a);
+}
+3)
+#include<stdio.h>
+#ONLY OUTPUT NO INPUT
+float circle(void){
+    float radius;
+    printf("Enter radius =");
+    scanf("%f",&radius);
+    float area;
+    area=radius*2*3.14;
+    return(area);
+}
+int main(){
+    float cirarea;
+    cirarea=circle();
+    printf("Area of circle is %f",cirarea);
+}
+4)
+#include<stdio.h>
+#NO INPUT AND OUTPUT
+void circle(void){
+    float radius,area;
+    printf("Enter radius of circle=");
+    scanf("%f",&radius);
+    area=2*3.14*radius;
+    printf("Area of cicrle is=%f",area);
+}
+int main(){
+    circle();
+}
+
