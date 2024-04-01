@@ -58,3 +58,35 @@ int main(){
     circle();
 }
 
+#OPERATIONS USING FUNCTIONS
+#include<stdio.h>
+float sum(float a,float b){
+    float result;
+    result=a+b;
+    return(result);
+}
+float sub(float a,float b){
+    float result;
+    result=a-b;
+    return(result);
+}
+float mul(float a,float b){
+    float result;
+    result=a*b;
+    return(result);
+    }
+float div(float a,float b){
+    float result;
+    result=(a/b);
+    return(result);
+}
+    int main(){
+        float a,b,add,minus,product,divison;
+        printf("Enetr 2 number=");
+        scanf("%f %f",&a,&b);
+        add=sum(a,b);
+        minus=sub(a,b);
+        product=mul(a,b);
+        divison=div(a,b);
+        printf("ADDITION=%f\nSUBSTRACTION=%f\nPRODUCT=%f\nDIVISON=%f\n",add,minus,product,divison);
+    }
