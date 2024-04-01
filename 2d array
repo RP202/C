@@ -92,3 +92,26 @@ int main(){
         }printf("\n");
     }
 }
+//SUM OF DIAGONAL ELEMNTS WILL BE
+#include<stdio.h>
+int main(){
+    int arr[3][3],i,j,sum;
+    printf("Enetr 9 elemnts for array:\n");
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+     for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            printf("%d ",arr[i][j]);
+        }printf("\n");
+           }
+        printf("Sum of diagonals of elemnt:");
+        for(i=0;i<3;i++){
+            sum=0;
+        for(j=0;j<3;j++){
+            sum=sum+arr[j][j];
+        }}
+            printf("%d",sum);
+    }
