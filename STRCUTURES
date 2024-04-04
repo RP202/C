@@ -1,0 +1,21 @@
+#include<stdio.h>
+struct students{
+    char name;
+    int roll;
+    float cgpa;
+};
+int main(){
+    struct students name[3];
+    int i;
+    printf("Student information:\n");
+    for(i=0;i<3;i++){
+        printf("Student %d\n",(i+1));
+        printf("Name:");
+        scanf("%s",&name[i].name);
+        printf("Roll number:");
+        scanf("%d",&name[i].roll);
+        printf("CGPA:");
+        scanf("%f",&name[i].cgpa);
+    }printf("\n");
+    printf("Thank you! you have reach the limit!");
+}
