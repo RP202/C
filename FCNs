@@ -90,3 +90,21 @@ float div(float a,float b){
         divison=div(a,b);
         printf("ADDITION=%f\nSUBSTRACTION=%f\nPRODUCT=%f\nDIVISON=%f\n",add,minus,product,divison);
     }
+#categorise
+#include<stdio.h>
+char characters(char i){
+    if(i>=97&&i<=122){
+        printf("small letter");
+    }
+    else if(i>=65&&i<=90){
+        printf("capital letter");
+    }
+    return(i);
+}
+int main(){
+    char letter,category;
+    printf("Enter character=");
+    scanf("%c",&letter);
+    printf("%c is ",letter);
+    category=characters(letter);
+}
