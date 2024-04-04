@@ -36,3 +36,29 @@ int main(){
     printf("sum of 2 numbers is = %d+%di",sum.real,sum.img);
     
 }
+//#Wwap to list student and display failed student
+#include<stdio.h>
+struct studentinfo{
+    char name;
+    char grade;
+};
+int main(){
+    int i,n;
+    struct studentinfo student[n];
+    printf("Enter limit to give input:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        printf("Student %d\n",(i+1));
+        printf("Name:");
+        scanf("%s",&student[i].name);
+        printf("Enter grades(in capital letters):");
+        scanf("%c",&student[i].grade);
+        if(student[i].grade<'E'){
+            printf("FAILED!");
+        }
+        else{
+            printf("Passed!");
+        }
+    }printf("\n");
+    printf("You are reach limit of %d",n);
+}
